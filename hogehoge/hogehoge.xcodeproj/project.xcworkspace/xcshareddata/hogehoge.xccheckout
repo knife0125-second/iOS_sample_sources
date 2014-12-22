@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3B956F3B-7662-4F8A-A454-0A14288B2771</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hogehoge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8B991E4EE82453C6B9AEEF7401D187E75E46DAA3</key>
+		<string>github.com:knife0125/iOS_sample_sources.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hogehoge/hogehoge.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8B991E4EE82453C6B9AEEF7401D187E75E46DAA3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:knife0125/iOS_sample_sources.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8B991E4EE82453C6B9AEEF7401D187E75E46DAA3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8B991E4EE82453C6B9AEEF7401D187E75E46DAA3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>05_iOS_sample_sources</string>
+		</dict>
+	</array>
+</dict>
+</plist>

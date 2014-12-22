@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vvh-yE-sXB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="lJv-sL-Up2">
+            <objects>
+                <tableViewController id="ppW-J4-3rd" customClass="sampleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" id="BiY-EN-HDN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="85" id="CV4-DZ-H37">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CV4-DZ-H37" id="hIK-RR-0lg">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hogehoge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH7-Dr-xBb">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="03B-Zl-dgk"/>
+                                                <constraint firstAttribute="width" constant="384" id="dym-0O-B8W"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="03B-Zl-dgk"/>
+                                                    <exclude reference="dym-0O-B8W"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="03B-Zl-dgk"/>
+                                                    <include reference="dym-0O-B8W"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iH7-Dr-xBb" firstAttribute="top" secondItem="hIK-RR-0lg" secondAttribute="topMargin" constant="45" id="Eb6-Xm-JR5">
+                                            <variation key="widthClass=compact" constant="24"/>
+                                        </constraint>
+                                        <constraint firstItem="iH7-Dr-xBb" firstAttribute="leading" secondItem="hIK-RR-0lg" secondAttribute="leadingMargin" id="LxO-CA-USP"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="iH7-Dr-xBb"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="Eb6-Xm-JR5"/>
+                                            <exclude reference="LxO-CA-USP"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="iH7-Dr-xBb"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="Eb6-Xm-JR5"/>
+                                            <include reference="LxO-CA-USP"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ppW-J4-3rd" id="GKB-8g-P8A"/>
+                            <outlet property="delegate" destination="ppW-J4-3rd" id="ke2-tr-SvH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="1bC-y7-O35"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjd-IR-Ny2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="533"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5IT-Xs-Eyu">
+            <objects>
+                <navigationController id="vvh-yE-sXB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ohn-NA-Ef1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ppW-J4-3rd" kind="relationship" relationship="rootViewController" id="qNa-qu-Rk4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZE-tK-KgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496.5" y="533"/>
+        </scene>
+    </scenes>
+</document>

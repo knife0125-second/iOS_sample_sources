@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ch-I5-zRC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="QXO-xD-S44"/>
+                                    <constraint firstAttribute="height" constant="200" id="ifg-OY-SML"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QXO-xD-S44"/>
+                                        <exclude reference="ifg-OY-SML"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="QXO-xD-S44"/>
+                                        <include reference="ifg-OY-SML"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qCc-gK-uU6" appends="YES" id="QUA-nl-HSZ"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqb-0R-SKJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="URB-0x-8xe"/>
+                                    <constraint firstAttribute="width" constant="180" id="keF-jp-tbp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="URB-0x-8xe"/>
+                                        <exclude reference="keF-jp-tbp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="URB-0x-8xe"/>
+                                        <include reference="keF-jp-tbp"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ewL-PO-DKf" appends="YES" id="M4T-9X-zfh"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzg-FG-Vhr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="108" y="279" width="184" height="145"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Ch-I5-zRC" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="gTe-Wj-Siu"/>
+                            <constraint firstItem="jqb-0R-SKJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="mpx-U2-17v"/>
+                            <constraint firstItem="3Ch-I5-zRC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="qRl-7Q-e8I"/>
+                            <constraint firstItem="jqb-0R-SKJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tA4-KC-cEk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3Ch-I5-zRC"/>
+                                <exclude reference="jqb-0R-SKJ"/>
+                                <exclude reference="Mzg-FG-Vhr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="gTe-Wj-Siu"/>
+                                <exclude reference="qRl-7Q-e8I"/>
+                                <exclude reference="mpx-U2-17v"/>
+                                <exclude reference="tA4-KC-cEk"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3Ch-I5-zRC"/>
+                                <include reference="jqb-0R-SKJ"/>
+                                <include reference="Mzg-FG-Vhr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="gTe-Wj-Siu"/>
+                                <include reference="qRl-7Q-e8I"/>
+                                <include reference="mpx-U2-17v"/>
+                                <include reference="tA4-KC-cEk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="belowView" destination="Mzg-FG-Vhr" id="DJR-oY-aKS"/>
+                        <outlet property="leftView" destination="jqb-0R-SKJ" id="MTx-B5-gxE"/>
+                        <outlet property="rightView" destination="3Ch-I5-zRC" id="1cC-Q5-Twy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ewL-PO-DKf">
+                    <connections>
+                        <action selector="tapLeftView:" destination="vXZ-lx-hvc" id="F6b-Uh-MYD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qCc-gK-uU6">
+                    <connections>
+                        <action selector="tapRightView:" destination="vXZ-lx-hvc" id="60u-cB-mrc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="399" y="356"/>
+        </scene>
+    </scenes>
+</document>

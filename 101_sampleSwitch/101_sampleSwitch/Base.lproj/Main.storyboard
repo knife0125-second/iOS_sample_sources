@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hDv-fU-JEj">
+                                <rect key="frame" x="155" y="272" width="51" height="31"/>
+                                <connections>
+                                    <action selector="tapSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="EWO-Br-ok0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スイッチオフ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-7V-nRS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="4SU-by-q4k"/>
+                                    <constraint firstAttribute="height" constant="21" id="yp5-Kw-HJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4SU-by-q4k"/>
+                                        <exclude reference="yp5-Kw-HJY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4SU-by-q4k"/>
+                                        <include reference="yp5-Kw-HJY"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bgq-7V-nRS" secondAttribute="centerX" id="MK2-qu-w1P"/>
+                            <constraint firstAttribute="centerX" secondItem="hDv-fU-JEj" secondAttribute="centerX" constant="-0.5" id="iba-tb-y5C"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hDv-fU-JEj" secondAttribute="bottom" constant="228" id="jHU-iO-euB"/>
+                            <constraint firstItem="bgq-7V-nRS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="140" id="p6E-3I-0H5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bgq-7V-nRS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="MK2-qu-w1P"/>
+                                <exclude reference="p6E-3I-0H5"/>
+                                <exclude reference="iba-tb-y5C"/>
+                                <exclude reference="jHU-iO-euB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bgq-7V-nRS"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="MK2-qu-w1P"/>
+                                <include reference="p6E-3I-0H5"/>
+                                <include reference="iba-tb-y5C"/>
+                                <include reference="jHU-iO-euB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="sampleSwitch" destination="hDv-fU-JEj" id="h8y-uB-CMW"/>
+                        <outlet property="textLabel" destination="bgq-7V-nRS" id="61N-HB-rOh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

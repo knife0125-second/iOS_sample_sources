@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E153E1E7-3B66-4C55-A79E-BDBF4DDF7572</string>
+	<key>IDESourceControlProjectName</key>
+	<string>900_sampleNoCoreData</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F4AC8A7D713848A8EAB35A25B01B7F2C7B8BA17E</key>
+		<string>github.com:knife0125/iOS_sample_sources.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>900_sampleNoCoreData/900_sampleNoCoreData.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F4AC8A7D713848A8EAB35A25B01B7F2C7B8BA17E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:knife0125/iOS_sample_sources.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F4AC8A7D713848A8EAB35A25B01B7F2C7B8BA17E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F4AC8A7D713848A8EAB35A25B01B7F2C7B8BA17E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>005_iOS_sample_sources</string>
+		</dict>
+	</array>
+</dict>
+</plist>

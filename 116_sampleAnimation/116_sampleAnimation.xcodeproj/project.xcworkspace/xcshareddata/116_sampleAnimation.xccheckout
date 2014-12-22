@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5234EBF2-CC02-45D6-8D1A-95F4E5C8E0E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>116_sampleAnimation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1810311EF44F7F0971D120085B707E36A7DD8544</key>
+		<string>github.com:knife0125/iOS_sample_sources.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>116_sampleAnimation/116_sampleAnimation.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1810311EF44F7F0971D120085B707E36A7DD8544</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:knife0125/iOS_sample_sources.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1810311EF44F7F0971D120085B707E36A7DD8544</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1810311EF44F7F0971D120085B707E36A7DD8544</string>
+			<key>IDESourceControlWCCName</key>
+			<string>05_iOS_sample_sources</string>
+		</dict>
+	</array>
+</dict>
+</plist>

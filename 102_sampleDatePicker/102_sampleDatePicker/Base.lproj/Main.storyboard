@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日付が表示されるよ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2Z-9K-Gx9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ACi-Rr-lrQ"/>
+                                    <constraint firstAttribute="width" constant="368" id="Dh1-oS-7hi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ACi-Rr-lrQ"/>
+                                        <exclude reference="Dh1-oS-7hi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ACi-Rr-lrQ"/>
+                                        <include reference="Dh1-oS-7hi"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xun-iS-Bc8">
+                                <rect key="frame" x="-160" y="-81" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="439351372.39854801">
+                                    <!--2014-12-04 02:02:52 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="er0-VD-hLa"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xun-iS-Bc8" secondAttribute="trailing" constant="22" id="3Fy-gk-kud">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
+                            <constraint firstItem="S2Z-9K-Gx9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="135" id="SFm-zq-Lp8"/>
+                            <constraint firstAttribute="centerX" secondItem="S2Z-9K-Gx9" secondAttribute="centerX" id="TV1-SK-wzb"/>
+                            <constraint firstItem="Xun-iS-Bc8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Vvq-Vo-bun">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Xun-iS-Bc8" secondAttribute="bottom" constant="150" id="bdc-de-YND"/>
+                            <constraint firstItem="Xun-iS-Bc8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="268" id="brO-ua-6gK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="S2Z-9K-Gx9"/>
+                                <exclude reference="Xun-iS-Bc8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SFm-zq-Lp8"/>
+                                <exclude reference="TV1-SK-wzb"/>
+                                <exclude reference="3Fy-gk-kud"/>
+                                <exclude reference="Vvq-Vo-bun"/>
+                                <exclude reference="brO-ua-6gK"/>
+                                <exclude reference="bdc-de-YND"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="S2Z-9K-Gx9"/>
+                                <include reference="Xun-iS-Bc8"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SFm-zq-Lp8"/>
+                                <include reference="TV1-SK-wzb"/>
+                                <include reference="3Fy-gk-kud"/>
+                                <include reference="Vvq-Vo-bun"/>
+                                <include reference="brO-ua-6gK"/>
+                                <include reference="bdc-de-YND"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="S2Z-9K-Gx9" id="YPX-7a-Ucv"/>
+                        <outlet property="datePicker" destination="Xun-iS-Bc8" id="Vaj-B5-hga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="382"/>
+        </scene>
+    </scenes>
+</document>
